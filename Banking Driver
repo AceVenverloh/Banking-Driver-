@@ -1,0 +1,19 @@
+java.util
+public class BankingDriver
+{
+    public main BankingDriver(){ 
+    BankAccount nicksAcct = new BankAccount(Nick, 450, 550); 
+    BankAccount carolsAcct = new BankAccount(Carol, 600, 700); 
+       
+    nicksAcct.printReport();
+    carolsAcct.printReport();
+    System.out.println("Total money in all accounts: " + nicksAcct.getCheckMoney + nicksAcct.getSaveMoney + carolsAcct.getCheckMoney + nicksAcct.getSaveMoney);
+    nicksAcct.makeCheckingDeposit(100);
+    nicksAcct.printReport();
+    
+    int nicksMoneyNoMore = nicksAcct.getCheckMoney + nicksAcct.getSaveMoney; 
+    carolsAcct.makeCheckingDeposit(nicksMoneyNoMore);
+    nicksAcct.printReport();
+    carolsAcct.printReport();
+    }
+}
